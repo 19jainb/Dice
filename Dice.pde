@@ -1,4 +1,4 @@
-Die die;
+Die die1;
 
 void setup()
 {
@@ -12,10 +12,10 @@ void draw()
     background((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
     for (int y = 0; y <= 350; y+=175) {
         for (int x = 0; x <= 350; x+=175) {
-            die = new Die(x, y);
-            die.show();
-            die.roll();
-            total += die.dieValue;
+            die1 = new Die(x, y);
+            die1.show();
+            die1.roll();
+            total += die1.die1Value;
         }  
     }  
     textSize(25);
@@ -30,49 +30,49 @@ void mousePressed()
 
 class Die
 {
-    int dieX, dieY, dieValue;
+    int die1X, die1Y, die1Value;
     Die(int x, int y)
     {
-        dieX = x;
-        dieY = y;
-        dieValue = (int) (Math.random() * 6) + 1;
+        die1X = x;
+        die1Y = y;
+        die1Value = (int) (Math.random() * 6) + 1;
     }
     
     void roll()
     {
-        if (dieValue == 1) {
+        if (die1Value == 1) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 75, dieY + 75, 10, 10);
-        } else if (dieValue == 2) {
+            ellipse(die1X + 75, die1Y + 75, 10, 10);
+        } else if (die1Value == 2) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 37.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 112.5, 10, 10);
-        } else if (dieValue == 3) {
+            ellipse(die1X + 37.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 112.5, 10, 10);
+        } else if (die1Value == 3) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 75, dieY + 37.5, 10, 10);
-            ellipse(dieX + 75, dieY + 75, 10, 10);
-            ellipse(dieX + 75, dieY + 112.5, 10, 10);
-        } else if (dieValue == 4) {
+            ellipse(die1X + 75, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 75, die1Y + 75, 10, 10);
+            ellipse(die1X + 75, die1Y + 112.5, 10, 10);
+        } else if (die1Value == 4) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 37.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 37.5, dieY + 112.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 112.5, 10, 10);
-        } else if (dieValue == 5) {
+            ellipse(die1X + 37.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 37.5, die1Y + 112.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 112.5, 10, 10);
+        } else if (die1Value == 5) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 37.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 37.5, dieY + 112.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 112.5, 10, 10);
-            ellipse(dieX + 75, dieY + 75, 10, 10);
-        } else if (dieValue == 6) {
+            ellipse(die1X + 37.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 37.5, die1Y + 112.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 112.5, 10, 10);
+            ellipse(die1X + 75, die1Y + 75, 10, 10);
+        } else if (die1Value == 6) {
             fill((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255));
-            ellipse(dieX + 37.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 37.5, dieY + 75, 10, 10);
-            ellipse(dieX + 37.5, dieY + 112.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 37.5, 10, 10);
-            ellipse(dieX + 112.5, dieY + 75, 10, 10);
-            ellipse(dieX + 112.5, dieY + 112.5, 10, 10);
+            ellipse(die1X + 37.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 37.5, die1Y + 75, 10, 10);
+            ellipse(die1X + 37.5, die1Y + 112.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 37.5, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 75, 10, 10);
+            ellipse(die1X + 112.5, die1Y + 112.5, 10, 10);
         }  
     }
     
@@ -80,6 +80,6 @@ class Die
     {
         noStroke();
         fill(255, 255, 255);
-        rect(dieX, dieY, 150, 150);
+        rect(die1X, die1Y, 150, 150);
     }
 }
