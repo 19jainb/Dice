@@ -20,7 +20,7 @@ void draw()
     }  
     textSize(25);
     text("DICE TOTAL: " + total, 505, 200);
-    text("AVERAGE: " + ((int) total/9), 530, 300);
+    text("AVERAGE: " + ((int) (total/9)), 530, 300);
 }
 
 void mousePressed()
